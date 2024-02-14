@@ -1,0 +1,211 @@
+@media (max-width: 1200px) 
+    .menu
+        &_link
+            font-size: 15px
+        &_item:not(:last-child)
+            padding-right: 12px
+    
+    .promo
+        &_header
+            font-size: 50px
+
+    .advantages 
+        &_reason
+            align-items: flex-start
+    
+    .mobile
+        &_item
+            &_subtitle
+                font-size: 20px
+
+    .require
+        &_wrapper
+            .require_descr
+                font-size: 14px
+            .require_list
+                &_item
+                    font-size: 13px
+
+
+@media (max-width: 991px)
+    .mobile
+        &_item
+            &_subtitle
+                font-size: 20px
+    .advantages 
+        &_reason
+            height: 300px
+    .menu
+        &_link
+            font-size: 10px
+        &_item:not(:last-child)
+            padding-right: 8px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 21px
+
+    .promo
+        &_header
+            font-size: 40px
+        &_supheader
+            font-size: 20px
+    .advantages 
+        &_reason
+            align-items: flex-start
+            flex-direction: column
+            align-items: center
+            &_descr
+                margin-top: 20px
+@media (max-width: 768px)
+    .promo
+        &_header
+            font-size: 35px
+    .menu
+        padding: 10px 0
+    .subheader
+        &_official
+            font-size: 8px
+        &_call
+            font-size: 9px
+        &_phone
+            font-size: 15px
+        .call_btn
+            width: 100%
+            font-size: 10px
+            height: 40px
+    .section_header
+        font-size: 30px
+    .mobile
+        &_item
+            min-height: 227px
+        &_item_subtitle
+            font-size: 18px
+    .advantages
+        padding-bottom: 32px
+        &_reason
+            img
+                margin-right: 0
+    .footer
+        .links_wrapper
+            flex-direction: column
+            align-items: center
+            .footer_nav
+                order: -1
+            .appmarket_links
+                justify-content: center
+            .social_links
+                justify-content: center
+@media (max-width: 575px)
+    .hero
+        background: url(../img/bg/mobile_car_bg.png)
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        min-height: 393px
+        padding-top: 27px
+        &_subtitle
+            color: #fff
+            bottom: 35px
+        .section_header
+            display: none
+        .section_subtitle
+            display: none
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        background-color: rgba(0, 0, 0, 0.8)
+        justify-content: space-around
+        align-items: center
+        transition: 0.6s all
+        z-index: 10
+        &_active
+            left: 0
+        &_item:not(:last-child) 
+            border: none
+        &_link 
+            font-size: 15px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+            cursor: pointer
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible 
+        display: block
+    .subheader
+        &_logo
+            margin: 0
+            position: relative
+            top: 50%
+            transform: translateY(-50%)   
+        &_official
+            display: none  
+        &_phone
+            text-align: center 
+        .call_btn
+            width: 130px
+            height: 30px
+            border-radius: 10px
+            font-size: 10px
+            display: block
+            margin: 0 auto
+    .promo
+        min-height: 400px 
+        padding-bottom: 35px
+        &_header
+            font-size: 38px
+        &_supheader
+            font-size: 24px
+        &_descr
+            display: none
+        &_btn
+            width: 210px
+            height: 50px
+            font-size: 16px
+    .section_header
+        font-size: 18px
+        margin-top: 10px
+    .advantages
+        padding-bottom: 32px
+        &_reason
+            height: auto
+            margin-bottom: 10px
+
+@media (max-width: 430px)
+    .menu
+        width: 80%
+
+
+
+    
